@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Contact Us"
+        android:id="@+id/contactUs"
+        tools:ignore="HardcodedText" />
+
+
+    <item
+        android:title="Notices"
+        android:id="@+id/notices"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:title="Sign Out"
+        android:id="@+id/signOut"
+        tools:ignore="HardcodedText" />
+
+</menu>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/login_back_color"
+            android:orientation="vertical"
+            android:padding="20dp"
+            tools:ignore="UselessParent">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Roll Number"
+                tools:ignore="HardcodedText">
+
+                <EditText
+                    android:id="@+id/roll_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:typeface="monospace"
+                    tools:ignore="Autofill,LabelFor" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                app:passwordToggleEnabled="true"
+                tools:ignore="HardcodedText">
+
+                <EditText
+                    android:inputType="numberPassword"
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:typeface="monospace"
+                    tools:ignore="Autofill,LabelFor,TextFields" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/rememberMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:checked="true"
+                android:text="@string/remember"
+                android:textColor="@color/white"
+                android:typeface="monospace" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:onClick="loginClicked"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="@string/login"
+            android:textAlignment="center"
+            android:typeface="monospace" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:onClick="aboutClicked"
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_back"
+        android:text="@string/about"
+        android:textColor="@color/white"
+        android:typeface="monospace"
+        tools:ignore="RelativeOverlap" />
+
+    <Button
+        android:onClick="contactUsClicked"
+        android:id="@+id/contact_us"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_back"
+        android:text="@string/contact"
+        android:textColor="@color/white"
+        android:typeface="monospace"
+        tools:ignore="RelativeOverlap" />
+
+</RelativeLayout>

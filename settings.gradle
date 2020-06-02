@@ -1,0 +1,2 @@
+rootProject.name='MyDigi Report'
+include ':app'

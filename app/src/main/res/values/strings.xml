@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyDigi Report</string>
+    <string name="login">   L O G I N   </string>
+    <string name="remember">Remember Me</string>
+    <string name="about">About</string>
+    <string name="contact">Contact Us</string>
+</resources>
